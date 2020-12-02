@@ -54,7 +54,7 @@ function draw() {
 
 In the sketch below we use `width` and `height` to place an ellipse at the center of the screen:
 
-```
+```javascript
 function setup() {
  createCanvas(600, 240);
 }
