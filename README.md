@@ -33,7 +33,7 @@ In this learning activity, students create their own variables to set the positi
 We have already used two built-in variables in the previous learning activity: mouseX and mouseY. Variables are placeholder names for values that change over time. We type mouseX knowing that p5 will replace that name with a number that represents the latest X position of the mouse. This number will change as the user moves the mouse across the canvas.
 Next we will use two other variables built into p5: width and height. In the following example, their values are 600 and 240 ––the dimensions we gave our canvas when we created it in the setup function.
 
-```
+```javascript
 function setup() {
  createCanvas(600, 240);
 
