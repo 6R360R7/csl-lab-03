@@ -32,6 +32,43 @@ In this learning activity, students create their own variables to set the positi
 ## Center elements with built-in variables: width and height
 We have already used two built-in variables in the previous learning activity: mouseX and mouseY. Variables are placeholder names for values that change over time. We type mouseX knowing that p5 will replace that name with a number that represents the latest X position of the mouse. This number will change as the user moves the mouse across the canvas.
 Next we will use two other variables built into p5: width and height. In the following example, their values are 600 and 240 ––the dimensions we gave our canvas when we created it in the setup function.
-[place code here]
+
+```
+function setup() {
+ createCanvas(600, 240);
+
+}
+
+function draw() {
+	background(180);
+
+	//Draw the value of the width variable on the screen
+	text(width, 40, 40);
+
+	//Draw the value of the height variable on the screen
+	text(height, 40, 60);
+
+}
+
+```
+
 In the sketch below we use `width` and `height` to place an ellipse at the center of the screen:
-[place code here]
+
+```
+function setup() {
+ createCanvas(600, 240);
+}
+
+function draw() {
+	background(180);
+ 	ellipse(width/2, height/2, 60, 60);
+}
+```
+
+The advantage of using these variables to place our ellipse is that, if we change the size of our sketch later, the ellipse will still be centered. To prove this, try changing the width and height of the canvas to 500 and 200, and run the sketch again.
+
+width and height can also be used to place shapes in positions like "a third of the screen across", or "two thirds of the screen across", or "two thirds of the screen down". Try drawing these:
+
+* `ellipse(width/3, height/2, 60, 60);`
+* `ellipse(2*width/3, height/2, 60, 60);`
+* `ellipse(width/3, 2*height/3, 60, 60);`
