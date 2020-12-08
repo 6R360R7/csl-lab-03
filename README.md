@@ -1,4 +1,4 @@
-# Variables - csl-lab-03
+# CSL Lab 03 - Variables
 
 ## How can I create custom variables to hold values in my p5.js projects?
 
